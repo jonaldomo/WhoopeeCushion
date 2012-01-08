@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1" >
+
+    <TableRow >
+
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="a14ef7245e150ac"
+            ads:loadAdOnCreate="true"
+            ads:testDevices="emulator-5554, M92005281217" />
+    </TableRow>
+
+    <TableRow >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="playSound"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/cushion" />
+    </TableRow>
+
+    <TableRow >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="launchPaid"
+            android:textColor="#FFFFFF"            
+            android:textSize="24sp"
+            android:background="@android:color/transparent"
+            android:text="@string/promo" />
+    </TableRow>
+
+</TableLayout>
